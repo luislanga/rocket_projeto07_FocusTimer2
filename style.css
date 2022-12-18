@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+    background-color: #FFFFFF;
+
+    display: grid;
+    height: 100vh;
+
+}
+
+main{
+    align-self: center ;
+    justify-self: center;
+    display: flex;
+    gap: 19.2rem;
+    align-items: center;
+}
+
+.timer{
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+}
+
+.clock{
+    font-size: 12.6rem;
+    line-height: 10.8rem;
+    font-weight: 500;
+    color: #323238;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls button{
+    background-color: transparent;
+    border: none;
+}
+
+.soundGallery{
+    display: grid;
+    grid-template-areas: 
+    "A B"
+    "C D";
+    gap: 3.2rem;
+}
+
+.soundGallery:nth-child(1){
+    grid-area: A;
+}
+.soundGallery:nth-child(2){
+    grid-area: B;
+}
+.soundGallery:nth-child(3){
+    grid-area: C;
+}
+.soundGallery:nth-child(4){
+    grid-area: D;
+}
+
+button:hover{
+    cursor: pointer;
+
+}
+
+.soundGallery button{
+    width: 13.8rem;
+    height: 15.2rem;
+    border: none;
+    border-radius: 2.4rem;
+    
+}
+
+.unpressed{
+
+    background-color: #E1E1E6;
+}
+
+
+.unpressed svg path{
+    fill: hsla(240, 6%, 21%, 1);
+    
+}
+
+.pressed{
+    background-color: #02799D;
+    
+}
+.pressed svg path{
+    fill: #FFFFFF;
+
+}
+
+.test{
+    background-color: red;
+}
